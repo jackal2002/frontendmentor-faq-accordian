@@ -110,9 +110,16 @@ body, html {
     line-height: 1.5;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: relative;
+    bottom: 15rem;
+}
 
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 @media only screen and (max-width: 700px) {
     .faq-box {
