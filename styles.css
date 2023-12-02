@@ -118,4 +118,9 @@ body, html {
     .faq-box {
         width: 30rem;
     }
+
+    .top-design {
+        height: 29.8vh;
+        background-size: cover;
+    }
 }
