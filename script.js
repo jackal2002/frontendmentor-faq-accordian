@@ -1,23 +1,25 @@
 const allPlusIcons = document.querySelectorAll('.plus');
 const allMinusIcons = document.querySelectorAll('.minus');
-const allFAQAnswers = document.querySelectorAll('.faq-answer');
+const allAnswers = document.querySelectorAll('.faq-answer');
+const allQuestions = document.querySelectorAll('.faq-question');
+let opened = false;
 
+allQuestions.forEach((question, index) => {
 
-allPlusIcons.forEach((icon, index) => {
-    icon.addEventListener('click', () => {
-        icon.classList.remove('visible');
-        icon.previousElementSibling.classList.add('visible');
-        allFAQAnswers[index].style.display = 'block';
+    question.addEventListener('click', () => {
+
+        if (!question.classList.contains('active')) {
+            allQuestions.forEach(question => {
+                question.classList.remove('active');
+            })
+    
+            question.classList.add('active');
+        } else {
+            question.classList.remove('active');
+        }
     })
-});
+})
 
-allMinusIcons.forEach((icon, index) => {
-    icon.addEventListener('click', () => {
-        icon.classList.remove('visible');
-        icon.nextElementSibling.classList.add('visible');
-        allFAQAnswers[index].style.display = 'none';
-    })
-});
 
 
 
