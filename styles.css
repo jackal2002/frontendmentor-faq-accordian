@@ -98,6 +98,10 @@ body, html {
     cursor: pointer;
 }
 
+.faq-question h3:hover, .faq-question.active h3 {
+    color: #AD28EB;
+}
+
 .faq-icon {
     width: 2rem;
 }
